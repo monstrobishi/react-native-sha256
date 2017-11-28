@@ -54,9 +54,6 @@ public class Sha256Module extends ReactContextBaseJavaModule {
       } catch (NoSuchAlgorithmException e) {
           e.printStackTrace();
           promise.reject("sha256", e.getMessage());
-      } catch (UnsupportedEncodingException e) {
-          e.printStackTrace();
-          promise.reject("sha256", e.getMessage());
       }
   }
 
